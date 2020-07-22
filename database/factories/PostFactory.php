@@ -9,5 +9,6 @@ $factory->define(Post::class, function (Faker $faker) {
     return [
         'title' => $faker->sentence,
         'body' => $faker->randomHtml(2, 3),
+        'user_name' => $faker->name,
     ];
 });
