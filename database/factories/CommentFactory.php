@@ -8,6 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(Comment::class, function (Faker $faker) {
     return [
         'body' => $faker->realText(50),
-        'user_name' => $faker->unique()->name,
+        'user_name' => $faker->name,
     ];
 });
